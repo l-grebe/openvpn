@@ -1,0 +1,8 @@
+.git
+.idea
+.github
+.dockerignore
+.gitignore
+.gitmodules
+# requirements.txt
+README.md
