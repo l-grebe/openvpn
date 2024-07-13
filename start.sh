@@ -16,7 +16,7 @@ if [ ! -f ${CLIENT_CONFIG} ]; then
     echo localhost | ovpn_initpki nopass
 
     # Build client config
-    easyrsa build-client-full host nopass
+    yes yes | easyrsa build-client-full host nopass
     ovpn_getclient host > ${CLIENT_CONFIG}
 
     # Update configs
